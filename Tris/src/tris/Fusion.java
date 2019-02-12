@@ -6,7 +6,7 @@ public class Fusion {
 
     private Sequence sequence1 = new Sequence(10, 100);
 
-    public void triFusion(ArrayList<Integer>list,int start, int end)
+    private void triFusion(ArrayList<Integer>list,int start, int end)
     {
         if(start!=end)
         {
@@ -17,14 +17,14 @@ public class Fusion {
         }
     }
 
-    public void fusion(ArrayList<Integer> list,int start, int middle, int end)
+    private void fusion(ArrayList<Integer> list,int start, int middle, int end)
     {
 
 
         LinkedList<Integer>liste =new LinkedList<>();
         liste.addAll(list);
-        System.out.println("linkedliste" +liste);
-        System.out.println("arrayliste " +list);
+        //System.out.println("linkedliste" +liste);
+        //System.out.println("arrayliste " +list);
 
         int middle1 = start;
         int middle2 = middle + 1;
