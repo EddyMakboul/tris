@@ -6,7 +6,7 @@ public class Quicksort {
 
     private Sequence sequence1 = new Sequence(10, 100);
 
-    public static void permute(ArrayList<Integer> listeswap, int i, int j)
+    private static void permute(ArrayList<Integer> listeswap, int i, int j)
     {
         int swap = listeswap.get(i) ;
         listeswap.set(i,listeswap.get(j));
@@ -14,7 +14,7 @@ public class Quicksort {
     }
 
 
-    public void quicksort(ArrayList<Integer> liste,int start,int end)
+    private void quicksort(ArrayList<Integer> liste,int start,int end)
     {
         if(start < end)
         {
@@ -24,7 +24,7 @@ public class Quicksort {
         }
     }
 
-    public int partitionner(ArrayList<Integer> liste2,int start,int end)
+    private int partitionner(ArrayList<Integer> liste2,int start,int end)
     {
         int pstart = start;
         int pend = end+1;
@@ -68,4 +68,6 @@ public class Quicksort {
 
 
     }
+
+
 }
